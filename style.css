@@ -1,0 +1,123 @@
+.invitacion, .mensaje-final {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container, .invitacion, .mensaje-final {
+    width: 80%;
+    max-width: 500px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+}
+
+h1, h2 {
+    font-size: 24px;
+    color: #ff3366;
+}
+
+p {
+    font-size: 18px;
+    color: #444;
+    margin: 15px 0;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: 0.3s;
+    margin: 10px;
+}
+
+.btn {
+    background: #ff4081;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: #e91e63;
+}
+
+/* Botón con latidos */
+.heartbeat {
+    animation: heartbeat 1.5s infinite;
+}
+
+/* Botón pulsante */
+.pulse {
+    animation: pulse 1s infinite;
+}
+
+/* Botón que tiembla */
+.shake {
+    transition: 0.2s;
+}
+
+/* Imagen en forma de corazón */
+.corazon img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    clip-path: path("M 150 30 C 120 0, 0 50, 50 150 C 100 250, 200 250, 250 150 C 300 50, 180 0, 150 30");
+}
+
+/* Animaciones */
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* 🌹 Animación de rosas cayendo */
+.rosa {
+    position: absolute;
+    width: 30px;
+    animation: rosas 6s linear infinite;
+}
+
+@keyframes rosas {
+    from { transform: translateY(-100vh); opacity: 1; }
+    to { transform: translateY(100vh); opacity: 0; }
+}
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.whatsapp:hover {
+    background: #1ebe57;
+}

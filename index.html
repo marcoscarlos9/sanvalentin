@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Serás mi San Valentín? 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade-in">🌹 Para la persona más especial en mi vida 🌹</h1>
+        <p class="fade-in">Desde que llegaste a mi vida, cada momento se volvió mágico. 💫</p>
+        <p class="fade-in">Hoy quiero preguntarte algo muy importante...</p>
+        <button class="btn heartbeat" onclick="mostrarInvitacion()">💌 Ver Pregunta</button>
+    </div>
+
+    <div class="invitacion" id="invitacion">
+        <h2>¿Quieres ser mi San Valentín? 💖</h2>
+        <p>Prometo hacer de este día algo inolvidable, lleno de amor, risas y muchos abrazos. 🥰</p>
+        <div class="botones">
+            <button class="btn yes pulse" onclick="respuestaSi()">¡Sí, mi amor! 😍</button>
+            <button class="btn no shake" onmouseover="moverBotonNo()">No... 🥺</button>
+        </div>
+    </div>
+
+    <div class="mensaje-final" id="mensaje-final">
+        <h2>¡Sabía que dirías que sí! 💖</h2>
+        <p>Nos espera una cita hermosa juntos. Te amo muchísimo. 💕</p>
+        <div class="corazon">
+            <img src="https://cdn.pixabay.com/photo/2016/11/23/15/40/couple-1850023_1280.jpg" alt="Pareja feliz">
+        </div>
+        <button class="btn whatsapp" onclick="enviarConfirmacion()">💌 Enviar Confirmación</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
